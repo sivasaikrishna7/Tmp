@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:tailwind-dev": "npx tailwindcss -o src/styles/tailwind.css --watch",
+    "build:tailwind-prod": "npx tailwindcss -o dist/src/styles/tailwind.prod.css -- minify"
   },
   "private": true,
   "dependencies": {
@@ -18,7 +20,9 @@
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "ng-zorro-antd": "^13.0.1",
     "rxjs": "~7.5.0",
+    "tailwindcss": "^3.0.19",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
